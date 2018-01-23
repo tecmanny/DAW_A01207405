@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    	
+    	
+    <head>
+        <title>Lab4</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1 style="text-align:center;">Laboratorio 4: JavaScript</h1>
+			<strong>José Manuel García Lugo</strong><br>
+        	<strong>A01207405</strong><br>
+        	<br>
+        <h2>Ejercicios:</h2><hr>
+            <h3 style="text-align:center;">Ejercicio 1 Tabla cuadrados y cubos:</h3>
+                <p><strong>Entrada:</strong> Un número pedido con un prompt.<br> <strong>Salida:</strong> Tabla con los resultados del numero dado con sus cuadrados y cubos .</p>
+                <div id="ej1"><button onclick="tabla()">Tabla</button></div>
+                <hr>
+            <h3 style="text-align:center;">Ejercicio 2 Suma de números aleatorios:</h3>
+                <p><strong>Entrada:</strong> Se pide el resultado de la suma de 2 números generados de manera aleatoria. <br> <strong>Salida:</strong> Indica si el resultado fue correcto o incorrecto, y el tiempo  de la operacion que realizó la persona.</p>
+                <div id="ej2"><button onclick="random()">Suma</button></div>
+                <hr>
+            <h3 style="text-align:center;">Ejercicio 3 Contador:</h3>
+                <p><strong>Parámetros:</strong> Un arreglo de números. En este caso se introduce: arreglo[1,-1,0,0,0,5,-6,7]<br><strong>Salida:</strong>  La cantidad de números negativos en el arreglo, la cantidad de ceros, y la cantidad de valores mayores a 0 en el arreglo.</p>
+                <div id="ej3"><button onclick="contador([1,-1,0,0,0,5,-6,7])">Contador</button></div>
+                <hr>
+            <h3 style="text-align:center;">Ejercicio 4 Promedios: </h3>
+                <p><strong>Parámetros:</strong> Arreglo de números.<br><strong>Salida:</strong> Un arreglo con los promedios de cada uno de los renglones de la matriz.</p>
+                <div id="ej4"><button onclick="promedio([[4,7,9,0,1],[2,1, 0,12,32],[1,2,3,4,5]])">Promedio</button></div>
+                <hr>
+            <h3 style="text-align:center;">Ejercicio 5 Inverso: </h3>
+                <p><strong>Parámetros:</strong> Un número.<br><strong>Salida:</strong>  El número con sus dígitos en orden inverso.</p>
+                <div id="ej5"><button onclick="invertir()">Invertir</button></div>
+                <hr>
+            <h3 style="text-align:center;">Ejercicio 6 Lower Case: </h3>
+                <p><strong>Parámetros:</strong> Una frase con mayúsculas y minúsculas<br><strong>Salida:</strong> La frase con todas las letras en minúscula.</p>
+                <div id="ej6"><button onclick="lowerCase()">Minúsculas</button></div>
+                <hr>
+            
+        	
+    <div>
+        <h2 style="text-align:center;">Preguntas Lab. 4:</h2>
+        <strong>
+            ¿Qué diferencias y semejanzas hay entre Java y JavaScript?<br></strong>
+            <p>
+                -  Java es un lenguaje orientado a objetos y Java Script es un lenguaje de scrpting orientado a objetos.<br>
+                - Java crea aplicaciones que corren en una máquina virtual, mientras el código de JavaScript sólo corren en un navegador.<br>
+                -  El código de Java se debe de compliar, mientras que el de Java script está todo en texto.<br>
+                -  Requieren plug-ins diferentes.
+            </p>
+        <p>
+            <strong>
+            ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)<br>
+            </strong>
+                - getDate(): Obtiene la fecha como número<br>
+                - getDay(): Obtiene el día de la semana como número (0-6)<br>
+                - getFullYear(): Obtiene el año como numero de 4 dígitos (yyyy)<br>
+                - getHours(): Obtiene la hora (0-23)<br>
+                - getMilliseconds(): Obtiene los milisegundos (0-999)<br>
+                - getMinutes(): Obtine los minutos(0-59)<br>
+                - getMonth(): Obtiene el mes (0-11)<br>
+                - getSeconds(): Obtiene los segundos (0-59)<br>
+                - getTime(): Obtiene el tiempo (milisegundos desde 1 de enero de 1970)
+            
+        </p>
+        <strong>
+            ¿Qué métodos tienen los arreglos? (Menciona al menos 5*)<br>
+            </strong>
+        <p>
+                - join(): Junta los elementos de un arreglo en un String.<br>
+                - pop(): Quita el último elemnto de un arreglo y lo devuelve.<br>
+                - push(): Agrega un nuevo elemento al final de un arreglo.<br>
+                - shift(): Elimina el primer elemento de un arreglo y recorre hacia adelante los demás elementos.<br>
+            - unshift(): Agrega un elemnto a la primera posición de un arreglo y recorre hacia atrás los demás elementos.
+           </p>     
+            
+        
+        <strong>
+            ¿Cómo se declara una variable con alcance local dentro de una función?<br>
+        </strong>
+            <p> - var nombreVariable</p>
+        
+        <strong>
+            ¿Qué implicaciones tiene utilizar variables globales dentro de funciones?<br>
+        </strong>
+            <p>- Las variables globales pueden sobreescribir a las variables locales. 
+        </p>
+        <strong>    
+        ¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?<br> </strong>
+            <p>- El método search(), Lo puedes utilizar para facilitar la búsqueda de una sección o una página por medio de ingresar palabras clave.</p>
+        <p>
+            
+        </p>
+    </div>
+    <div>
+        <h2 style="text-align:center;">Referencias:</h2>
+        <p>
+             * https://www.java.com/en/download/faq/java_javascript.xml<br>
+            * https://www.w3schools.com/js/js_date_methods.asp<br>
+            * https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_unshift<br>
+            * https://www.w3schools.com/js/js_scope.asp<br>
+            * https://www.w3schools.com/js/js_string_methods.asp
+        </p>
+    </div>
+    <script type = "text/javascript" src = "lab4.js"></script>
+    </body>
+</html>
