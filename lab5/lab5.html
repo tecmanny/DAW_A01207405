@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Lab 5</title>
+    </head>
+    
+    <body>
+        <section>
+            <h1 style="text-align:center;" >Preguntas a responder</h1>
+            
+            <h4>¿Por qué es una buena práctica usar JavaScript checar que sean válidos los inputs de las formas antes de envíar los datos al servidor?</h4>
+            
+            <Strong>Validando los inputs se puede comprobar si el usuario te está dando las entradas necesarias, por ejemplo, cumpliendo con todos los requisitos de una contraseña, e informarle si algo está mal, o si falta de llenar algún campo requerido.</Strong>
+            
+            <h4>¿Cómo puedes saltarte la seguridad de las validaciones hechas con JavaScript?</h4>
+            
+            <strong>Entrando a ver las herramientas de desarrollador, desactivando el uso de JavaScript en la configuración del navegador.</strong>
+            
+            <h4>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
+            
+            <strong>Porque de esta manera, no se necesita envíar nada al servidor para validar, y así no se tiene que recargar la página para volver a ingresar los datos, haciéndolo más conveniente para el usuario en caso de equivocarse en la forma. De cualquier manera, siempre se deben de hacer validaciones del lado del servidor.</strong>
+        
+        </section>
+        
+        <section>
+            <h1 style="text-align:center;">Validación de Contraseña</h1>
+            <form method="post"  id="pwd">
+                <p>Ingresa la contraseña: <input type="password" required name="password"></p>
+                <p>Vuelve a ingresar contraseña: <input type="password" required name="verif"></p>
+                <input type="submit">
+            </form>
+        </section>
+        
+        <section>
+            <h1 style="text-align:center;">Tienda</h1>
+            
+            <h3>Artículos disponibles:</h3>
+            
+            <form method="post" id="tienda">
+                <p>Refresco - $12.00<br>Ingresa la cantidad:<input type="number" name="refrescos" min="0"></p>
+                <p>Pizza - $92<br>Ingresa la cantidad: <input type="number" name="pizza" min="0"></p>
+                <p>Cerveza - $25<br>Ingresa la cantidad: <input type="number" name="cerveza" min="0"></p>
+                <input type="submit">
+            </form>
+            
+            <p><b>Precio:</b></p><p id="precio"></p>
+            <p><b>IVA:</b></p><p id="iva"></p>
+            <p><b>Total:</b></p><p id="total"></p>
+        
+        </section>
+        
+        <section>
+        
+            <h1 style="text-align:center;">Registro Prestamo Carros</h1>
+            
+            <form method="post" id="renta">
+                <p>Id Usuario: <input type="text" name="user"></p>
+                <p>Id Carro: <input type="text" name="book"></p>
+                <input type="submit">
+            
+            </form>
+        </section>
+        
+        <script src="script.js"></script>
+    </body>
+    
+</html>
