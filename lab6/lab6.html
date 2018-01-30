@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-        <title>Lab 5</title>
+        <title>Lab 6</title>
    
     <head>
         <meta charset = "UTF-8">
         
         <!-- CSS
         
-       
-        <link rel="stylesheet" type = "text/css" href = "style.css">
-  -->
+   -->  
+        <link rel="stylesheet" type = "text/css" href = "styles.css">
+  
         
         </head> 
     <body>
@@ -21,8 +21,12 @@
         <br>
         
          <div id ="investigacion">
-            <h2>Investigación <br>
-             José Manuel García Lugo</h2>
+             <h1> Lab 6</h1>
+            <h2> José Manuel García Lugo<br>
+             
+                A01207405<br>
+                Investigación <br>
+             </h2>
             <table>
                 <tr>
                     <th>Question</th>
@@ -84,16 +88,18 @@
                 
                 <!-- Crear Campo de Textos y boton-->
                 <div class = "tooltip1">
-                    <input  type = "text" placeholder="username" name = "username" ><span class="tooltiptext"></span><br>
+                    <input  type = "text" placeholder="username" name = "usuario" ><span class="tooltiptext">
+                    Escriba su usuario</span><br>
                 </div>
                 <div class = "tooltip2">
-                    <input  type = "password" placeholder="password" name="password"><span class="tooltiptext">E </span><br>
+                    <input  type = "password" placeholder="password" name="password"><span class="tooltiptext">Escriba su contraseña </span><br>
                 </div>
                 <div class = "tooltip3">
-                    <input  type = "password" placeholder="Re-enter password" name="againpassword"><span class="tooltiptext">a</span><br>
+                   <br>
                 </div>
                 <input type="button" onclick="check(this.form)" value = "Submit">
-                <input type="button" onclick="forward()" value = "Accept">
+               <input type="button" onclick="forward()" value = "Investigar">
+               
                
               
                
@@ -102,46 +108,42 @@
             
             </form>
         
-
+    
+<br><br>
+<br><br><br>
+<br><br><br><br><br>
+        
+        
+        
+<p>Arrastre la imagen al recuadro.
+        </p>
+        <div id="ddrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        
+        <br>
+        
+        <img id="drag1" src="marca.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        
         
     
-
         
         
         
         
-        <script>
-        function check(form){
-            if(form.password.value == form.againpassword.value){
-                window.alert("Se creo la cuenta con el nombre de usuario " + form.username.value + " y con la contrasena " + form.password.value+" ,please accept the copyrghits to continue");
-                window.setTimeout(outofTime,10000);
-               
-                
-            }
-            else{
-                window.alert("No coinciden las contrasenas");
-                
-            }
-            
-        }
-            
-        function outofTime(){
-            alert("You ran out of time, please accept the copyrights before timeout,try again");
-            
-        }
-            
-        function forward(){
-            document.location.href=" https://www.w3schools.com/js/js_timing.asp"; //es para que cargue en la misma pagina de donde estas
-            clearTimeout();
-        }
-  
-        </script>
         
+        
+    </body>
+    
+    <footer>
         
        
-    </body>
-    <footer>
+        
         <br> <br> <br> <br> <br>
+     
+        
+        
+        
+        
         <div id = "Referencias">
             <h3>Referencias</h3>
             <p>https://www.w3schools.com/jsref/prop_style_position.asp</p>
@@ -151,5 +153,8 @@
         </div>
    
     </footer>
+    
+    
+<script src="script2.js"></script>
 </html>
     
