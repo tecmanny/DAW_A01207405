@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+        <title>Lab 5</title>
+   
+    <head>
+        <meta charset = "UTF-8">
+        
+        <!-- CSS
+        
+       
+        <link rel="stylesheet" type = "text/css" href = "style.css">
+  -->
+        
+        </head> 
+    <body>
+        
+        <div class = "header">
+                
+        </div>
+        
+        <br>
+        
+         <div id ="investigacion">
+            <h2>Investigación <br>
+             José Manuel García Lugo</h2>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                
+                </tr>
+                <tr>
+                    <th>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</th>
+                    <th>Las propiedades de position son las siguientes:<br><br>
+                    
+                    Static:  Valor por defectoque no define o define de manera estatica un elemento.<br>
+                        
+                        
+                    Relative: Hace lo mismo que Static a menos que le agregues otras propiedades.<br><br>
+                        
+                    Fixed: Posicionar un elemento del navegador de manera realtiva.<br><br>
+                        
+                    Absolute: Comportamiento similar al fixed pero relativo al la posicion anterior.<br> <br>
+                        
+                    
+                    </th>
+                </tr>
+                <tr>
+                    <th>¿Cuáles son los valores estándar para la propiedad visibility?</th>
+                    <th>
+                    La propiedad visibility permite hacer invisibles o visibles las cajas de los elementos<br><br>
+                    
+                    Los valores permitidos son: <br>
+                        
+                    * Visible<br>
+                    * Hidden <br>
+                    * Collapse<br>
+                    * Inherit <br>
+                        
+                    </th>
+                </tr>
+                 <tr>
+                    <th>¿Qué es el zIndex y para qué sirve?</th>
+                    <th>
+                        
+                        La propiedad Z-Index especifica el orden de apilamiento de un elemento <br>
+                        
+                        Un elemento con un valor de apilamiento mayor siempre va hasta el frente del que tiene menor valor.<br> <br>
+
+                        </th>
+                </tr>
+            </table>
+            
+       
+        
+        
+        
+        </div>
+        <br><br><br><br>
+<br> <br> <br> <br> <br>
+        
+        <form name = "login">
+            <div class = "login">
+                
+                <!-- Crear Campo de Textos y boton-->
+                <div class = "tooltip1">
+                    <input  type = "text" placeholder="username" name = "username" ><span class="tooltiptext"></span><br>
+                </div>
+                <div class = "tooltip2">
+                    <input  type = "password" placeholder="password" name="password"><span class="tooltiptext">E </span><br>
+                </div>
+                <div class = "tooltip3">
+                    <input  type = "password" placeholder="Re-enter password" name="againpassword"><span class="tooltiptext">a</span><br>
+                </div>
+                <input type="button" onclick="check(this.form)" value = "Submit">
+                <input type="button" onclick="forward()" value = "Accept">
+               
+              
+               
+                </div>
+            
+            
+            </form>
+        
+
+        
+    
+
+        
+        
+        
+        
+        <script>
+        function check(form){
+            if(form.password.value == form.againpassword.value){
+                window.alert("Se creo la cuenta con el nombre de usuario " + form.username.value + " y con la contrasena " + form.password.value+" ,please accept the copyrghits to continue");
+                window.setTimeout(outofTime,10000);
+               
+                
+            }
+            else{
+                window.alert("No coinciden las contrasenas");
+                
+            }
+            
+        }
+            
+        function outofTime(){
+            alert("You ran out of time, please accept the copyrights before timeout,try again");
+            
+        }
+            
+        function forward(){
+            document.location.href=" https://www.w3schools.com/js/js_timing.asp"; //es para que cargue en la misma pagina de donde estas
+            clearTimeout();
+        }
+  
+        </script>
+        
+        
+       
+    </body>
+    <footer>
+        <br> <br> <br> <br> <br>
+        <div id = "Referencias">
+            <h3>Referencias</h3>
+            <p>https://www.w3schools.com/jsref/prop_style_position.asp</p>
+            <p>https://www.w3schools.com/jsref/prop_style_visibility.asp</p>
+            <p>https://www.w3schools.com/cssref/pr_pos_z-index.asp</p>
+            <p>https://www.w3schools.com/html/html5_draganddrop.asp</p>
+        </div>
+   
+    </footer>
+</html>
+    
