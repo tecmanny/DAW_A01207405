@@ -1,0 +1,19 @@
+1. ¿Que muestra la instrucción? 
+De la tabla creada, muestra a información, su tipo, fecha, usuario e informacion del formato de columna.
+
+2. ¿Qué efecto tuvo esta acción?
+
+Crear 4 tablas simultaneamente
+
+3. ¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+Hacer mas cosas con menos teclas, me refiero que permite crear por ejemplo tablas con diferente informacion con un sola ejecucion de codigo
+
+4. ¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+Entregan esta conectado a las demas tablas y ademas hereda sus llaves primarias.
+
+5. ¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+
+El numero de columnas es igual ademas de que el tipo de datos y nombre de la tabla de SQL y archivo de excel.
+
+6. ¿Qué sucedió?
+Se cargó la informacion del excel a tablas de SQL.
