@@ -1,0 +1,48 @@
+1.	Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+	- La columna clave es la llave de la table y, al agregar el nuevo valor, se pierde la unicidad de las filas dentro de la table porque hay una clave repetida.
+
+2. 	¿Qué ocurrió?
+	- Muestra un error de violacion de llave primaria, ya que al agregar la tabla se violaria la unicidad de la llave primaria. 
+
+3.	¿Qué información muestra esta consulta?
+	- Muestra la restricción de la llave primaria
+
+4.  	¿Qué sentencias utilizaste para definir las llaves primarias?
+	- ALTER TABLE nombreTabla add constraint nombreLlave PRIMARY KEY (nombreColumna)
+
+5.	¿Qué sentencias utilizaste para definir este constraint?
+	- ALTER TABLE nombreTabla add constraint nombreLlave PRIMARY KEY (nombreColumna1, nombreColumna2, …, nombreColumnan)
+
+6.	¿Qué particularidad observas en los valores para clave, rfc y numero?
+	- Que son valores que no son parecidos a los valores predefinidos por la tabla, se ven extraños.
+
+7.	¿Cómo responde el sistema a la inserción de este registro?
+	- Se agrega porque la llave no se repite
+
+8.	¿Qué significa el mensaje que emite el sistema?
+	- Que no se cargó la fila porque no existe ningun registro con clave 0
+
+9.	¿Qué significado tiene la sentencia anterior?
+	- Está creando una restricción en la tabla Entregan que es: La columna clave será una llave foránea obtenida de la columna clave de la tabla Materiales.
+
+10.	¿Qué significan las columnas de esas consultas?
+	-  Describen las restricciones con las que cuenta la tabla, indicando su tipo, estado, nombre y llaves.
+
+11.  	¿Qué uso se le está dando a GETDATE()? 
+	- Se utiliza para definir la fecha de entrega, la cual es tomada de la fecha que dice el servidor en ese momento.
+
+12. 	¿Tiene sentido el valor del campo de cantidad?
+	- No , dice 0
+
+13.	¿Cómo responde el sistema?
+	- Marca un error
+
+14.	¿Qué significa el mensaje?
+-	Significa que no se puede insertar la fila porque existe una restricción de los valores de las columnas que se quieren insertar, en este caso, no se puede tener un valor menor o igual a 0 en la columna cantidad de la tabla entregan.
+
+15.	Define Integridad Referencial:
+-	La integridad referencial significa que la clave externa de una tabla de referencia siempre debe aludir a una fila válida de la tabla a la que se haga referencia. La integridad referencial garantiza que la relación entre dos tablas permanezca sincronizada durante las operaciones de actualización y eliminación. [1]
+
+[1] – Integridad Referencial. Microsoft Developer Network. Recuperado de https://msdn.microsoft.com/es-MX/library/aa292166(v=vs.71).aspx
+
+ 
