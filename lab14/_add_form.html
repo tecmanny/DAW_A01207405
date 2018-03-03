@@ -1,0 +1,27 @@
+  <form action="create.php" method="POST" enctype="multipart/form-data">
+    <div class="input-field col s6">
+          <input id="producto" type="text" name="producto" class="validate" required>
+          <label for="Producto">Nombre</label>
+        </div>
+        
+    <div class="input-field col s12">
+          <?php if (isset($_SESSION["error_archivo"]) != ""): ?>
+            <div class="card-panel">
+              <span class="red-text text-darken-2"><?=$_SESSION["error_archivo"] ?></span>
+            </div>
+          <?php endif; ?>
+        </div>
+    
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>Imagen</span>
+        <input type="file" name="imagen">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" >
+      </div>
+    </div>
+    <div class="input-field col s6">
+          <input type="submit" value="Registrar">
+    </div>
+  </form>
