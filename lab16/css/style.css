@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.Login{
+  display: inline-block;
+ position: relative;
+    left: 1280px;
+    top: -35px;
+
+}
+
+.parent{
+    background: -webkit-linear-gradient(top, #000000 , #1e1d1d);
+    height: 60px;
+    width: 100%;
+    list-style: none;
+    color: white;
+
+
+}
+
+.child{
+    ling-height: 40px;
+    background: -webkit-linear-gradient(top, #000000 , #1e1d1d);
+    height: 40px;width: 1200px;
+    margin: 0 auto;
+
+}
+.button{
+    background:  -webkit-linear-gradient(top,#000000,#1e1d1d);
+    text-decoration: none;font-size: 24px;color: white;
+    display: inline-block;
+    padding-top: 5px;padding-bottom: 5px;
+    padding-left: 10px; padding-right: 10px;
+    line-height: 30px;
+    border-left: 1px solid white;
+
+}
+
+ul li {
+    float: left;
+}
+.col-sm-2{
+
+    width: 90%;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 15px;
+
+
+
+
+}
+.col-sm-1{
+    position: relative;
+    float: left;
+    width: 10%;
+    border-right: solid black;
+    padding-top: 15px;
+
+
+
+
+}
+div.logo-header {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    line-height: 56px;
+    font-size: 2.1rem;
+    padding-left: 200px;
+
+
+
+
+}
+
+.navigation{
+    background-color: white;
+
+
+}
+
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
