@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once("modelo.php");
     
     if(isset($_SESSION["usuario"])){
         include("_header.html");
@@ -8,7 +9,7 @@
         include("_cuestionario.html");
         include("_footer.html");
     }
-    else if($_POST["usuario"] == "A01207405" && $_POST["password"]=="nomelase"){
+     else if (login($_POST["usuario"], $_POST["password"]) ) {
         unset($_SESSION["error"]);
         $_SESSION["usuario"] = $_POST["usuario"];
         $user = $_SESSION["usuario"];
@@ -17,8 +18,9 @@
         include("_cuestionario.html");
         include("_footer.html");
     }
-    else if($_POST["usuario"] != "A01207405" || $_POST["password"] != "nomelase"){
-        $_SESSION["error"] = "El nombre de usuario y/o la contraseña son incorrectos";
+
+     else{
+        $_SESSION["error"] = "Usuario y/o contraseña incorrectos";
         header("location: index.php");
     }
 
