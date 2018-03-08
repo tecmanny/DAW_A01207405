@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+    require_once("modelo.php");
     if(isset($_SESSION["usuario"]) ) {
         if(isset($_POST["producto"]) != NULL ) {
             unset($_SESSION["error_archivo"]);

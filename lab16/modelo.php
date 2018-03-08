@@ -7,7 +7,7 @@
             $mysql = mysqli_connect("localhost","root","","tienda");
         }
         
-  $mysql->set_charset("utf8");
+$mysql->set_charset("utf8");
         return $mysql;
     }
     
@@ -34,6 +34,33 @@
                 return true;
             }
             return false;
+        } 
+        return false;
+    }
+    
+     function crearProducto($nombre, $imagen) {
+        $db = connect();
+        if ($db != NULL) {
+            
+            // insert command specification 
+            $query='INSERT INTO productos (nombre,imagen) VALUES (?,?) ';
+            // Preparing the statement 
+            if (!($statement = $db->prepare($query))) {
+                die("Preparation failed: (" . $db->errno . ") " . $db->error);
+            }
+            // Binding statement params 
+            if (!$statement->bind_param("ss", $nombre, $imagen)) {
+                die("Parameter vinculation failed: (" . $statement->errno . ") " . $statement->error); 
+            }
+             // Executing the statement
+             if (!$statement->execute()) {
+                die("Execution failed: (" . $statement->errno . ") " . $statement->error);
+              } 
+
+            
+            mysqli_free_result($results);
+            disconnect($db);
+            return true;
         } 
         return false;
     }
