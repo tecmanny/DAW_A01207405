@@ -1,0 +1,32 @@
+José Manuel García Lugo
+A01207405
+
+
+
+- ¿Que pasa cuando deseas realizar esta consulta? 
+
+Se muestran las instancias de clientes que se realizan.
+
+- ¿Qué pasa cuando deseas realizar esta consulta? 
+
+Indica que no se realiza la consulta debido a que la transaccion aun no termina.
+
+- Explica por qué ocurre dicho evento.
+
+Se muestran, debido a que la parte de la tabla se encuentra completa.
+
+- ¿Qué ocurrió y por qué? 
+
+Se cancelan las instrucciones de la prueba 2 y gracias a esto se regresa a la primer prueba
+
+- ¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+
+Regresa respecto a la ultima transaccion realizada el numero de error.
+
+- ¿Explica qué hace la transacción? 
+
+Idealmente inserta clientes, pero el comando marca un error por violacion de clave.
+
+- ¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué. 
+
+Se realiza un rollback, por lo que cualquier cambio realizado se borra.
