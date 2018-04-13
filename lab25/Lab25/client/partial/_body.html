@@ -1,0 +1,29 @@
+<h4>Uso de servicio</h4>
+<br><br>
+
+
+<p>Muestra las fotos almacenadas en la base de datos</p>
+
+
+<?php
+    $url = "http://localhost/php/Lab25/my-servicio-web/public/"; 
+    
+$c = curl_init($url);
+    $response = curl_exec($c);
+   curl_close($c);
+
+
+    //var_dump($response);
+ 
+?>
+
+<?php
+    $id = 2;
+    $url = "http://localhost/php/Lab25/my-servicio-web/public/$id"; 
+    $c = curl_init($url);
+   $response = curl_exec($c);
+    curl_close($c);
+
+    //var_dump($response); 
+
+?>

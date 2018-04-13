@@ -1,0 +1,19 @@
+<?php require_once("../util.php"); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <h1>Parte Servicios</h1>
+        
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    </head>
+    
+    
+    <body>
+        <?php if (isset($id)) : ?>
+            <?php echo getFotoid(); ?>
+        <?php else: ?>
+            <?php echo getFoto(); ?>
+        <?php endif; ?>
+    </body>
+</html>

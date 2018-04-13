@@ -1,0 +1,72 @@
+[11-Apr-2018 13:46:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php on line 31
+[11-Apr-2018 13:46:28 UTC] PHP Stack trace:
+[11-Apr-2018 13:46:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:0
+[11-Apr-2018 13:46:28 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:30
+[11-Apr-2018 13:46:28 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:296
+[11-Apr-2018 13:46:28 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:388
+[11-Apr-2018 13:46:28 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:46:28 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:495
+[11-Apr-2018 13:46:28 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:313
+[11-Apr-2018 13:46:28 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:46:28 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:335
+[11-Apr-2018 13:46:28 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:46:28 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:8-14}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:46:28 UTC] PHP  12. Slim\Views\PhpRenderer->render() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:13
+[11-Apr-2018 13:46:28 UTC] PHP  13. Slim\Views\PhpRenderer->fetch() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:62
+[11-Apr-2018 13:46:28 UTC] PHP  14. Slim\Views\PhpRenderer->protectedIncludeScope() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:169
+[11-Apr-2018 13:46:28 UTC] PHP  15. include() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:188
+[11-Apr-2018 13:46:28 UTC] PHP  16. getDescripcionZombie() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/templates/servicios.phtml:13
+[11-Apr-2018 13:46:28 UTC] PHP  17. mysqli_num_rows() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php:31
+[11-Apr-2018 13:47:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php on line 31
+[11-Apr-2018 13:47:38 UTC] PHP Stack trace:
+[11-Apr-2018 13:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:0
+[11-Apr-2018 13:47:38 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:30
+[11-Apr-2018 13:47:38 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:296
+[11-Apr-2018 13:47:38 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:388
+[11-Apr-2018 13:47:38 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:47:38 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:495
+[11-Apr-2018 13:47:38 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:313
+[11-Apr-2018 13:47:38 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:47:38 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:335
+[11-Apr-2018 13:47:38 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:47:38 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:8-14}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:47:38 UTC] PHP  12. Slim\Views\PhpRenderer->render() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:13
+[11-Apr-2018 13:47:38 UTC] PHP  13. Slim\Views\PhpRenderer->fetch() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:62
+[11-Apr-2018 13:47:38 UTC] PHP  14. Slim\Views\PhpRenderer->protectedIncludeScope() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:169
+[11-Apr-2018 13:47:38 UTC] PHP  15. include() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:188
+[11-Apr-2018 13:47:38 UTC] PHP  16. getDescripcionZombie() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/templates/servicios.phtml:13
+[11-Apr-2018 13:47:38 UTC] PHP  17. mysqli_num_rows() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php:31
+[11-Apr-2018 13:55:26 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php on line 31
+[11-Apr-2018 13:55:26 UTC] PHP Stack trace:
+[11-Apr-2018 13:55:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:0
+[11-Apr-2018 13:55:26 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:30
+[11-Apr-2018 13:55:26 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:296
+[11-Apr-2018 13:55:26 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:388
+[11-Apr-2018 13:55:26 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:55:26 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:495
+[11-Apr-2018 13:55:26 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:313
+[11-Apr-2018 13:55:26 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 13:55:26 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:335
+[11-Apr-2018 13:55:26 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:55:26 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:8-14}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 13:55:26 UTC] PHP  12. Slim\Views\PhpRenderer->render() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:13
+[11-Apr-2018 13:55:26 UTC] PHP  13. Slim\Views\PhpRenderer->fetch() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:62
+[11-Apr-2018 13:55:26 UTC] PHP  14. Slim\Views\PhpRenderer->protectedIncludeScope() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:169
+[11-Apr-2018 13:55:26 UTC] PHP  15. include() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:188
+[11-Apr-2018 14:00:53 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/util.php on line 40
+[11-Apr-2018 14:00:53 UTC] PHP Stack trace:
+[11-Apr-2018 14:00:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:0
+[11-Apr-2018 14:00:53 UTC] PHP   2. Slim\App->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/public/index.php:30
+[11-Apr-2018 14:00:53 UTC] PHP   3. Slim\App->process() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:296
+[11-Apr-2018 14:00:53 UTC] PHP   4. Slim\App->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:388
+[11-Apr-2018 14:00:53 UTC] PHP   5. Slim\App->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 14:00:53 UTC] PHP   6. Slim\Route->run() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/App.php:495
+[11-Apr-2018 14:00:53 UTC] PHP   7. Slim\Route->callMiddlewareStack() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:313
+[11-Apr-2018 14:00:53 UTC] PHP   8. Slim\Route->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/MiddlewareAwareTrait.php:117
+[11-Apr-2018 14:00:53 UTC] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Route.php:335
+[11-Apr-2018 14:00:53 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 14:00:53 UTC] PHP  11. Closure->{closure:/home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:8-14}() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php:41
+[11-Apr-2018 14:00:53 UTC] PHP  12. Slim\Views\PhpRenderer->render() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/src/routes.php:13
+[11-Apr-2018 14:00:53 UTC] PHP  13. Slim\Views\PhpRenderer->fetch() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:62
+[11-Apr-2018 14:00:53 UTC] PHP  14. Slim\Views\PhpRenderer->protectedIncludeScope() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:169
+[11-Apr-2018 14:00:53 UTC] PHP  15. include() /home/ubuntu/workspace/DAW_A01207765/Lab25/my-servicio-web/vendor/slim/php-view/src/PhpRenderer.php:188
